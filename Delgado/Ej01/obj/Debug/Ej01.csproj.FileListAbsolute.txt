@@ -1,0 +1,8 @@
+D:\Federico Delgado 5°10\Delgado\Ej01\obj\Debug\Ej01.csproj.AssemblyReference.cache
+D:\Federico Delgado 5°10\Delgado\Ej01\obj\Debug\Ej01.csproj.SuggestedBindingRedirects.cache
+D:\Federico Delgado 5°10\Delgado\Ej01\obj\Debug\Ej01.csproj.CoreCompileInputs.cache
+D:\Federico Delgado 5°10\Delgado\Ej01\bin\Debug\Ej01.exe.config
+D:\Federico Delgado 5°10\Delgado\Ej01\bin\Debug\Ej01.exe
+D:\Federico Delgado 5°10\Delgado\Ej01\bin\Debug\Ej01.pdb
+D:\Federico Delgado 5°10\Delgado\Ej01\obj\Debug\Ej01.exe
+D:\Federico Delgado 5°10\Delgado\Ej01\obj\Debug\Ej01.pdb
