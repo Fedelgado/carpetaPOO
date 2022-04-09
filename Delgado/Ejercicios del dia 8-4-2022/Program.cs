@@ -25,10 +25,10 @@ namespace Ejercicios_del_dia_8_4_2022
         static void Main(string[] args)
         {
             Persona per1 = new Persona("Juan", "Domingo", new DateTime(1995, 4, 24));
-            Persona per2 = new Persona("Franco", "Jaurez", new DateTime(2000, 8, 15));
-            Persona per3 = new Persona("Bautista", "Jaime", new DateTime(2000, 8, 15));
-            Persona per4 = new Persona("Fernando", "De La Fuente", new DateTime(2000, 8, 15));
-            Persona per5 = new Persona("", "Jaurez", new DateTime(2000, 8, 15));
+            Persona per2 = new Persona("Franco", "Jaurez", new DateTime(1956, 8, 15));
+            Persona per3 = new Persona("Bautista", "Jaime", new DateTime(1973, 10, 17));
+            Persona per4 = new Persona("Fernando", "De La Fuente", new DateTime(1994, 2, 25));
+            Persona per5 = new Persona("", "Jaurez", new DateTime(1967, 11, 27));
         }
     }
 }
