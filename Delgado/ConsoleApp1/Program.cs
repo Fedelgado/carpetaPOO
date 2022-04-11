@@ -47,7 +47,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Persona per1, per2;
+            Persona per1;
 
             per1 = new Persona("federicogay", "delgadogay", new DateTime(2001, 4, 10));
 
