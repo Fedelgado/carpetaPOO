@@ -57,14 +57,14 @@ namespace Ejercicios_del_dia_8_4_2022
             foreach (Persona persona in Personas)
             {
                 
-                if(persona.fechaNacimiento.Month == new DateTime(2022, 05, 26).Month) /* En este if se evalúa quienes cumplen en el mes de mayo */
+                if(persona.fechaNacimiento.Month == new DateTime(2022, 05, 26).Month) /* En este if se evalúa quienes cumplen en el mes de mayo (el año y el día son indistintos ya que se evalua el mes) */
                 {
 
                     CumpleMayo.Add(persona);
 
                 }
 
-                if (persona.fechaNacimiento.DayOfYear > DateTime.Now.DayOfYear) /* En este if se agregan a la lista los que no cumplieron aún*/
+                if (persona.fechaNacimiento.DayOfYear > DateTime.Now.DayOfYear) /* En este if se agregan a la lista los que no cumplieron aún */
                 {
                     NoCumplio.Add(persona);
 
