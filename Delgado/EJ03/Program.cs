@@ -57,10 +57,12 @@ namespace EJ03
 
         static void Main(string[] args)
         {
+            int pos = 0;
             List<Persona> persHnocumplio = new List<Persona>();
             List<Persona> persHmas21 = new List<Persona>();
             List<Persona> persMas50Hmas21 = new List<Persona>();
             List<Persona> per = new List<Persona>();
+
             Persona per1 = new Persona("Juan", new DateTime(1978, 05, 12));
             Persona per2 = new Persona("Nicolas", new DateTime(1975, 11, 28));
             Persona per3 = new Persona("Juana", new DateTime(1963, 07, 22));
@@ -70,13 +72,17 @@ namespace EJ03
 
             /*Persona per4 = new Persona("Pedro", new DateTime(1972, 02, 15));
             Persona per5 = new Persona("Valentina", new DateTime(1991, 04, 17));
-            Persona per6 = new Persona("Franco", new DateTime(1969, 09, 19));*/
+            Persona per6 = new Persona("Franco", new DateTime(1969, 09, 19));
+
             Hijos hijo1 = new Hijos("Manuel", new DateTime(1996, 02, 18));
             Hijos hijo2 = new Hijos("Facundo", new DateTime(1999, 05, 02));
             Hijos hijo3 = new Hijos("Federico", new DateTime(2004, 01, 30));
             Hijos hijo4 = new Hijos("Nuhore", new DateTime(2003, 07, 01));
             Hijos hijo5 = new Hijos("Sebastián", new DateTime(2004, 01, 22));
             Hijos hijo6 = new Hijos("Tobias", new DateTime(2001, 08, 24));
+            Hijos hijo7 = new Hijos("Paola", new DateTime(1998, 04, 27));
+            Hijos hijo8 = new Hijos("Maria", new DateTime(1997, 01, 12));
+
 
             per1.hijos.Add(hijo6);
             per1.hijos.Add(hijo2);
@@ -85,6 +91,7 @@ namespace EJ03
             per3.hijos.Add(hijo5);
             per3.hijos.Add(hijo1);
 
+            per(ran).hijos.Add(hijo2);
 
             per.Add(per1);
             per.Add(per2);
@@ -140,6 +147,13 @@ namespace EJ03
                     Console.WriteLine($"{pers.nombreP} tiene mas de 50 años y tiene {pers.may50men21} hij@/s mayores de 21");
                 }
                 
+
+            per[new Random().Next(0, per.Count - 1)].hijos.Add(hijo7);
+            //per[rand.Next(0, per.Count - 1)].hijos.Add(hijo7);
+
+            foreach (Persona pers in per)
+            {
+                Console.WriteLine($"{pers.nombreP} tiene mas de 50 años y tiene {pers.may50men21} hij@/s mayores de 21");
                 Console.WriteLine($"{pers.nombreP} tiene {pers.hijosmay} hijos mayores de 21 años");
                 Console.WriteLine($"{pers.nombreP} tiene {pers.hijosnocump} hijos que todavía no cumplieron años");
             }
