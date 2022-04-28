@@ -64,6 +64,10 @@ namespace EJ03
             Persona per1 = new Persona("Juan", new DateTime(1978, 05, 12));
             Persona per2 = new Persona("Nicolas", new DateTime(1975, 11, 28));
             Persona per3 = new Persona("Juana", new DateTime(1963, 07, 22));
+            Persona per4 = new Persona("Francisco", new DateTime(1974, 05, 27));
+            Persona per5 = new Persona("Federico", new DateTime(1970, 02, 16));
+            Persona per6 = new Persona("Jaime", new DateTime(1969, 08, 20));
+
             /*Persona per4 = new Persona("Pedro", new DateTime(1972, 02, 15));
             Persona per5 = new Persona("Valentina", new DateTime(1991, 04, 17));
             Persona per6 = new Persona("Franco", new DateTime(1969, 09, 19));*/
@@ -85,7 +89,15 @@ namespace EJ03
             per.Add(per1);
             per.Add(per2);
             per.Add(per3);
+            per.Add(per4);
+            per.Add(per5);
+            per.Add(per6);
 
+            for(int i = 1; i < per.Count; i+=2)
+            {
+                Console.WriteLine(per[i].nombreP);
+                Console.ReadKey();
+            }
 
             foreach (Persona persona in per)
             {
@@ -107,23 +119,27 @@ namespace EJ03
                         {
 
                             persona.may50men21++;
-
-                    }
-                    else
-                    {
-
+                        
                     }
 
 
-                    
+
 
 
                 }
 
             }
             foreach(Persona pers in per)
-            {
-                Console.WriteLine($"{pers.nombreP} tiene mas de 50 años y tiene {pers.may50men21} hij@/s mayores de 21");
+            {   
+                if(pers.may50men21 == 0)
+                {
+                    Console.WriteLine("Esta persona no es mayor a 50 años o no tiene un hij@ mayor a 21 años");
+                }
+                else
+                {
+                    Console.WriteLine($"{pers.nombreP} tiene mas de 50 años y tiene {pers.may50men21} hij@/s mayores de 21");
+                }
+                
                 Console.WriteLine($"{pers.nombreP} tiene {pers.hijosmay} hijos mayores de 21 años");
                 Console.WriteLine($"{pers.nombreP} tiene {pers.hijosnocump} hijos que todavía no cumplieron años");
             }
