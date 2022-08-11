@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\obj\Debug\Ej 11-08-22.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\obj\Debug\Ej 11-08-22.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\obj\Debug\Ej 11-08-22.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\bin\Debug\Ej 11-08-22.exe.config
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\bin\Debug\Ej 11-08-22.exe
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\bin\Debug\Ej 11-08-22.pdb
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\obj\Debug\Ej 11-08-22.exe
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej 11-08-22\obj\Debug\Ej 11-08-22.pdb
