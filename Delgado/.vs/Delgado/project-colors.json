@@ -10,7 +10,32 @@
       "ProjectGuid": "be428c23-2833-47af-90d0-b33faa4dea89",
       "DisplayName": "Ej01",
       "ColorIndex": 1
+    },
+    "1d793e5f-b3b9-478c-9b58-495c7c8a8912": {
+      "ProjectGuid": "1d793e5f-b3b9-478c-9b58-495c7c8a8912",
+      "DisplayName": "Ej 11-08-22",
+      "ColorIndex": 2
+    },
+    "a0829605-2a85-442a-9999-3d866c6e07d5": {
+      "ProjectGuid": "a0829605-2a85-442a-9999-3d866c6e07d5",
+      "DisplayName": "EJ03",
+      "ColorIndex": 3
+    },
+    "d4527579-cde2-4621-89bd-af6f7d941a4e": {
+      "ProjectGuid": "d4527579-cde2-4621-89bd-af6f7d941a4e",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 4
+    },
+    "9abbb045-d86c-47d0-a4a8-72f74bf5d1f3": {
+      "ProjectGuid": "9abbb045-d86c-47d0-a4a8-72f74bf5d1f3",
+      "DisplayName": "Ejercicios del dia 8-4-2022",
+      "ColorIndex": 5
+    },
+    "b52549dd-6bb4-459a-b6b4-455c132d322a": {
+      "ProjectGuid": "b52549dd-6bb4-459a-b6b4-455c132d322a",
+      "DisplayName": "FormEjerc",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 7
 }
