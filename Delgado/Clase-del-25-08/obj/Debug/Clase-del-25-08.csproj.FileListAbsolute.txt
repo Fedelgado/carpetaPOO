@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\bin\Debug\Clase-del-25-08.exe.config
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\bin\Debug\Clase-del-25-08.exe
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\bin\Debug\Clase-del-25-08.pdb
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\obj\Debug\Clase-del-25-08.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\obj\Debug\Clase-del-25-08.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\obj\Debug\Clase-del-25-08.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\obj\Debug\Clase-del-25-08.exe
+C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Clase-del-25-08\obj\Debug\Clase-del-25-08.pdb
