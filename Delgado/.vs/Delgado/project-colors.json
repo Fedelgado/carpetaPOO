@@ -35,7 +35,22 @@
       "ProjectGuid": "b52549dd-6bb4-459a-b6b4-455c132d322a",
       "DisplayName": "FormEjerc",
       "ColorIndex": 6
+    },
+    "096fb4d6-a787-41a8-86c8-6db5a9ddf74a": {
+      "ProjectGuid": "096fb4d6-a787-41a8-86c8-6db5a9ddf74a",
+      "DisplayName": "ej02._17_09",
+      "ColorIndex": 7
+    },
+    "e563af99-6a7a-409f-9d7a-45d900db7bb3": {
+      "ProjectGuid": "e563af99-6a7a-409f-9d7a-45d900db7bb3",
+      "DisplayName": "Clase-del-25-08",
+      "ColorIndex": 8
+    },
+    "f7b36872-1b08-4592-bffc-70b8fdf2ed35": {
+      "ProjectGuid": "f7b36872-1b08-4592-bffc-70b8fdf2ed35",
+      "DisplayName": "ej01.17_09",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 10
 }

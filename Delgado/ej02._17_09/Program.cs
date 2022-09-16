@@ -12,13 +12,9 @@ namespace ej02._17_09
         int edad = 0;
         int DNI = 0;
         int peso = 0;
-        char sexo = (char) Sexo.H;
+        char sexo = 'H';
         float altura = 0;
-       public enum Sexo
-        {
-            H = 'H', 
-            M = 'M'
-        }
+
 
         public string Nombre
         {
@@ -50,7 +46,51 @@ namespace ej02._17_09
             set { peso = value; }
         }
 
-        
+        public int calcularIMC()
+        {
+            if (Peso / (Altura * Altura) < 20)
+            {
+                return -1;
+            }
+            else if (Peso / Math.Pow(Altura, 2) >= 20 && Peso / Math.Pow(Altura, 2) <= 25)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1;
+            }
+        }
+
+        public bool esMayorDeEdad()
+        {
+            if (Edad >= 18)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void comprobarSexo(char sexo)
+        {
+            if(sexo == 'H' || sexo == 'M')
+            {
+                this.sexo = sexo;
+            }else
+            {
+                this.sexo = 'H';
+            }
+        }
+
+        private int generaDNI()
+        {
+            Random ran = new Random();
+            int rd = ran.Next(0, 70000000);
+            return rd;
+        }
 
         public Persona(string nom, int edad, char sexo)
         {
@@ -73,12 +113,20 @@ namespace ej02._17_09
         }
 
         public Persona()
-        { 
+        {
         }
+    }
         internal class Program
     {
-        static void Main(string[] args)
+            public enum Sexo
+            {
+                H = 'H',
+                M = 'M'
+            }
+
+            static void Main(string[] args)
         {
+            
            // Persona pene = new Persona("Inutil", 15, (char) Sexo.H);
         }
     }
