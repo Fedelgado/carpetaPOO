@@ -62,7 +62,7 @@ namespace ej02._17_09
             altura = 0;
         }
 
-        public Persona(string nom, int edad, char sex)
+        public Persona(string nom, int edad, char sex, int dni, int peso, float altura)
         {
             sexo = sex;
             Nombre = nom;
