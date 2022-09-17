@@ -1,0 +1,8 @@
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\bin\Debug\ej03._17_09.exe.config
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\bin\Debug\ej03._17_09.exe
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\bin\Debug\ej03._17_09.pdb
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\obj\Debug\ej03._17_09.csproj.AssemblyReference.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\obj\Debug\ej03._17_09.csproj.SuggestedBindingRedirects.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\obj\Debug\ej03._17_09.csproj.CoreCompileInputs.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\obj\Debug\ej03._17_09.exe
+C:\Users\A\Desktop\carpetaPOO\Delgado\ej03._17_09\obj\Debug\ej03._17_09.pdb

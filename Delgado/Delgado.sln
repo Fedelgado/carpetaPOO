@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicios del dia 8-4-2022", "Ejercicios del dia 8-4-2022\Ejercicios del dia 8-4-2022.csproj", "{9ABBB045-D86C-47D0-A4A8-72F74BF5D1F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ03", "EJ03\EJ03.csproj", "{A0829605-2A85-442A-9999-3D866C6E07D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ej", "EJ03\Ej.csproj", "{A0829605-2A85-442A-9999-3D866C6E07D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ej 11-08-22", "Ej 11-08-22\Ej 11-08-22.csproj", "{1D793E5F-B3B9-478C-9B58-495C7C8A8912}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej01.17_09", "ej01.17_09\ej01.17_09.csproj", "{F7B36872-1B08-4592-BFFC-70B8FDF2ED35}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej02._17_09", "ej02._17_09\ej02._17_09.csproj", "{096FB4D6-A787-41A8-86C8-6DB5A9DDF74A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej03._17_09", "ej03._17_09\ej03._17_09.csproj", "{4F0E5F93-AF74-4B3B-9B47-6A002283F18A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{096FB4D6-A787-41A8-86C8-6DB5A9DDF74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{096FB4D6-A787-41A8-86C8-6DB5A9DDF74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{096FB4D6-A787-41A8-86C8-6DB5A9DDF74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0E5F93-AF74-4B3B-9B47-6A002283F18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0E5F93-AF74-4B3B-9B47-6A002283F18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0E5F93-AF74-4B3B-9B47-6A002283F18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0E5F93-AF74-4B3B-9B47-6A002283F18A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,11 +9,17 @@ namespace ej02._17_09
     public class Persona
     {
         string nombre = "";
-        int edad = 0;
+        Int16 edad = 0;
         int DNI = 0;
-        int peso = 0;
+        float peso = 0;
         char sexo = 'H';
         float altura = 0;
+
+        public char Sexo
+        {
+            get { return sexo; }
+            set { sexo = value; }
+        }
 
 
         public string Nombre
@@ -22,7 +28,7 @@ namespace ej02._17_09
             set { nombre = value; }
         }
 
-        public int Edad
+        public Int16 Edad
         {
             get { return edad; }
             set { edad = value; }
@@ -40,7 +46,7 @@ namespace ej02._17_09
             set { altura = value; }
         }
 
-        public int Peso
+        public float Peso
         {
             get { return peso; }
             set { peso = value; }
@@ -74,27 +80,27 @@ namespace ej02._17_09
             }
         }
 
-        private void comprobarSexo(char sexo)
+        private char comprobarSexo(char sexo)
         {
-            if(sexo == 'H' || sexo == 'M')
+            if (sexo == 'H' || sexo == 'M')
             {
-                this.sexo = sexo;
+                return sexo;
             }else
             {
-                this.sexo = 'H';
+                return 'H';
             }
         }
 
-        private int generaDNI()
+        private int generarDNI()
         {
             Random ran = new Random();
             int rd = ran.Next(0, 70000000);
             return rd;
         }
 
-        public Persona(string nom, int edad, char sexo)
+        public Persona(string nom, Int16 edad, char sexo)
         {
-            this.sexo = sexo;
+            Sexo = sexo;
             Nombre = nom;
             Edad = edad;
             DNI = 0;
@@ -102,12 +108,12 @@ namespace ej02._17_09
             altura = 0;
         }
 
-        public Persona(string nom, int edad, char sex, int dni, int peso, float altura)
+        public Persona(string nom, Int16 edad, char sex, float peso, float altura)
         {
-            sexo = sex;
+            Sexo = comprobarSexo(sex);
             Nombre = nom;
             Edad = edad;
-            Dni = dni;
+            Dni = generarDNI();
             Peso = peso;
             Altura = altura;
         }
@@ -118,16 +124,63 @@ namespace ej02._17_09
     }
         internal class Program
     {
-            public enum Sexo
-            {
-                H = 'H',
-                M = 'M'
-            }
+
 
             static void Main(string[] args)
         {
             
-           // Persona pene = new Persona("Inutil", 15, (char) Sexo.H);
+            Console.WriteLine("Ingrese la cantidad de personas que desea crear: ");
+            int cantPer = Convert.ToInt32(Console.ReadLine());
+            List<Persona> persList = new List<Persona>();
+            for (int i = 1; i < cantPer + 1; i++)
+            {
+
+                Console.WriteLine($"Ingrese el nombre de la persona n° {i}: ");
+                string nom = Console.ReadLine();
+                Console.WriteLine($"Ingrese la edad de la persona n° {i}: ");
+                Int16 edad = Convert.ToInt16(Console.ReadLine());
+                Console.WriteLine($"Ingrese el peso en kg de la persona n° {i}: ");
+                float peso = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Ingrese la altura en metros de la persona n° {i}: ");
+                float altura = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Ingrese el sexo de la persona n° {i} (H si es Hombre, M si es mujer): ");
+                char sexo = Convert.ToChar(Console.ReadLine());
+                persList.Add(new Persona(nom, edad, sexo, peso, altura)); 
+                /* en esta parte no sabía que hacer, porque la consigna dice 
+               "Crea 3 objetos de la clase anterior, el primer objeto obtendrá las anteriores variables pedidas por teclado,
+                el segundo objeto obtendrá todos los anteriores menos el peso 
+                y la altura y el último por defecto, para este último utiliza los métodos set para darle a los atributos un valor" 
+                pero no sé como hacer para que cuando una variable no tiene un valor asignado no la tome, por eso lo deje así.*/
+            }
+
+            foreach (Persona pers in persList)
+            {
+                bool mayorDeEdad = pers.esMayorDeEdad();
+                Console.WriteLine("");
+                if (pers.calcularIMC() == -1) 
+                {
+                    Console.WriteLine("Esta persona esta por debajo de su peso ideal");
+                }else if (pers.calcularIMC() == 0) 
+                {
+                    Console.WriteLine("Esta persona esta en su peso ideal");
+                }
+                else
+                {
+                    Console.WriteLine("Esta persona esta por encima de su peso ideal");
+                }
+
+
+                if (mayorDeEdad)
+                    Console.WriteLine("Esta persona es mayor de edad");
+                else
+                    Console.WriteLine("Esta persona no es mayor de edad"); //Y no, no me olvide las llaves, no las puse cuando es un una línea no hace falta
+                
+
+                Console.WriteLine($"Se llama {pers.Nombre} tiene {pers.Edad} años, su DNI es {pers.Dni}, " +
+                    $"es {pers.Sexo} (H hombre, M mujer), mide {pers.Altura} metros y pesa {pers.Peso} kg");
+            }
+            Console.ReadKey();
+            // Persona pene = new Persona("Inutil", 15, (char) Sexo.H);
         }
     }
 }
