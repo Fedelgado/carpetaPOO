@@ -2,14 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace ej03._17_09
 {
+
+
     public class Password
     {
+        public static Random ran = new Random();
         int longitud = 8;
         string contraseña;
+        int sexoanal;
+
+        public int Sexoanal
+        {
+            get { return sexoanal; }
+            set { sexoanal = value; }
+
+        }
 
         public int Longitud
         {
@@ -31,17 +42,17 @@ namespace ej03._17_09
 
         public Password(int longit)
         {
-            this.longitud = longit;
+            Longitud = longit;
             contraseña = generarPassword();
-            
+
         }
         public bool esFuerte()
         {
             int mayusc = 0;
             int minusc = 0;
             int num = 0;
-            for(int i = 0; i < longitud; i++)
-            {             
+            for (int i = 0; i < longitud; i++)
+            {
                 if (Char.IsUpper(contraseña[i]))
                 {
                     mayusc++;
@@ -64,20 +75,18 @@ namespace ej03._17_09
             }
             else
             {
-                return false;
+                return false; 
             }
         }
         public string generarPassword()
-        {
-
+        { 
             string caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
             string contraseña = String.Empty;
             char letra;
-            Random ran = new Random();
             for (int i = 0; i < longitud; i++)
             {
-                letra = caracteres[ran.Next(caracteres.Length)];
-                contraseña += letra.ToString();
+                letra = caracteres[ran.Next(0, caracteres.Length)];
+                contraseña += letra;
             }
             return contraseña;
 
@@ -88,6 +97,7 @@ namespace ej03._17_09
     {
         static void Main(string[] args)
         {
+       
             List<Password> contraseñas = new List<Password>();
             List<bool> esFuerteOno = new List<bool>();
             Console.WriteLine("Cuantas contraseñas quiere crear? ingrese un numero: ");
@@ -99,7 +109,7 @@ namespace ej03._17_09
                 Password contra = new Password(longCont);
                 contraseñas.Add(contra);
                 esFuerteOno.Add(contra.esFuerte());
-                if(esFuerteOno[i] == true)
+                if (esFuerteOno[i] == true)
                 {
                     Console.WriteLine($"La contraseña es {contraseñas[i].Contraseña} y es fuerte");
                 }
@@ -107,7 +117,9 @@ namespace ej03._17_09
                 {
                     Console.WriteLine($"La contraseña es {contraseñas[i].Contraseña} y no es fuerte");
                 }
-                Console.WriteLine("");
+                    Console.WriteLine("");
+
+                
             }
             Console.ReadKey();
         }
