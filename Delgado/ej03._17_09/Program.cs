@@ -13,14 +13,7 @@ namespace ej03._17_09
         public static Random ran = new Random();
         int longitud = 8;
         string contraseña;
-        int sexoanal;
 
-        public int Sexoanal
-        {
-            get { return sexoanal; }
-            set { sexoanal = value; }
-
-        }
 
         public int Longitud
         {
