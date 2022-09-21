@@ -68,7 +68,7 @@ namespace ej03._17_09
             }
             else
             {
-                return false; 
+                return false;
             }
         }
         public string generarPassword()
@@ -90,25 +90,55 @@ namespace ej03._17_09
     {
         static void Main(string[] args)
         {
-       
+            int mayusc = 0;
+            int minusc = 0;
+            int num = 0;
             List<Password> contraseñas = new List<Password>();
             List<bool> esFuerteOno = new List<bool>();
             Console.WriteLine("Cuantas contraseñas quiere crear? ingrese un numero: ");
             int cantCont = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Ingrese la longitud, en numeros, que quiere para las contraseñas: ");
             int longCont = Convert.ToInt32(Console.ReadLine());
+
+
+
             for (int i = 0; i < cantCont; i++)
             {
+                
                 Password contra = new Password(longCont);
                 contraseñas.Add(contra);
                 esFuerteOno.Add(contra.esFuerte());
+                for (int j = 0; j < contraseñas.Count; j++)
+                {
+                    if (Char.IsUpper(contra.Contraseña[j]))
+                    {
+                        mayusc++;
+                    }
+
+                    if (Char.IsNumber(contra.Contraseña[j]))
+                    {
+                        num++;
+                    }
+
+                    if (Char.IsLower(contra.Contraseña[j]))
+                    {
+                        minusc++;
+                    }
+                }
+
                 if (esFuerteOno[i] == true)
                 {
                     Console.WriteLine($"La contraseña es {contraseñas[i].Contraseña} y es fuerte");
                 }
                 else
                 {
-                    Console.WriteLine($"La contraseña es {contraseñas[i].Contraseña} y no es fuerte");
+                    Console.WriteLine($"La contraseña es {contraseñas[i].Contraseña} no es fuerte");
+                    if (mayusc <= 2)
+                        Console.WriteLine("le faltan mayúsculas");
+                    if (minusc <= 1)
+                        Console.WriteLine("le faltan minúsculas");
+                    if (num <= 5)
+                        Console.WriteLine("y le faltan números");
                 }
                     Console.WriteLine("");
 
