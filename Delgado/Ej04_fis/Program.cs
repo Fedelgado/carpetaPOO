@@ -19,14 +19,14 @@ namespace Ej04_fis
         public char ConsumoEnergetico { get { return consumoEnergetico; } }
 
         float peso = 5;
-        public float Peso { get { return peso; } }
+        public float Peso { get { return peso; } set { peso = value; } }
 
         string[] colores = {"blanco", "negro", "azul", "gris"};
         public Electrodomestico()
         {
         }
 
-        public Electrodomestico(int precio, float peso)
+        public Electrodomestico( float precio, float peso)
         {
             precioBase = precio;
             this.peso = peso;
@@ -63,9 +63,9 @@ namespace Ej04_fis
             }
         }
 
-        public float precioFinal()
+        public virtual float precioFinal()
         {
-            float precioFinal = this.PrecioBase;
+            float precioFinal = PrecioBase;
 
             precioFinal += 100 - ((int)this.ConsumoEnergetico - 65) * 20;
 
@@ -81,6 +81,56 @@ namespace Ej04_fis
     
     public class Lavadora : Electrodomestico
     {
+        int carga = 5;
+        public int Carga { get { return carga; } set { carga = value; } }
+
+        public Lavadora()
+        {
+        }
+
+        public Lavadora(float precio, float peso) : base(peso,  precio)
+        { }
+
+        public Lavadora(float precio, string color, char consumo, float peso, int carga) : base(precio, color, consumo, peso)
+        {
+            Carga = carga;
+        }
+
+        public override float precioFinal()
+        {
+            float precioFinal = PrecioBase;
+            if (Carga > 30)
+            {
+                precioFinal += 50;
+            }
+            else
+            {}
+            return precioFinal;
+        }
+    }
+
+    public class Television : Electrodomestico
+    {
+        int resolucion = 20;
+        bool sintonizadorTDT = false;
+
+        public int Resolucion { get { return resolucion; } }
+        public bool SintonizadorTDT { get { return sintonizadorTDT; } }
+
+        public Television()
+        {
+        }
+
+        public Television(float precio, float peso) : base(peso, precio)
+        {
+        }
+
+        public Television(float precio, string color, char consumo, float peso, int resolucion, bool sintonizadorTDT) : base(precio, color, consumo, peso)
+        {
+           this.resolucion = resolucion;
+           this.sintonizadorTDT = sintonizadorTDT;
+        }
+
 
     }
 
