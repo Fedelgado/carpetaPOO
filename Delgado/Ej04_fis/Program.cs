@@ -131,6 +131,18 @@ namespace Ej04_fis
            this.sintonizadorTDT = sintonizadorTDT;
         }
 
+        public override float precioFinal()
+        {
+            float precioFinal = PrecioBase;
+            if (Resolucion > 40)
+                precioFinal += (30*PrecioBase)/100;
+
+            if (SintonizadorTDT == true)
+                precioFinal += 50;
+
+
+            return precioFinal;
+        }
 
     }
 
@@ -138,6 +150,34 @@ namespace Ej04_fis
     {
         static void Main(string[] args)
         {
+            List<Electrodomestico> listaElec = new List<Electrodomestico>(); 
+            Lavadora lav1 = new Lavadora(30, 40);
+            Lavadora lav2 = new Lavadora(60, 96);
+            Lavadora lav3 = new Lavadora(20, 53);
+            Lavadora lav4 = new Lavadora(100, 76);
+            Television tel1 = new Television(20, 60);
+            Television tel2 = new Television(50, 90);
+            Television tel3 = new Television(44, 56);
+            Electrodomestico elec1 = new Electrodomestico(86, 36);
+            Electrodomestico elec2 = new Electrodomestico(77, 24);
+            Electrodomestico elec3 = new Electrodomestico(15, 64);
+
+
+            listaElec.Add(lav1);
+            listaElec.Add(lav2);
+            listaElec.Add(lav3);
+            listaElec.Add(elec1);
+            listaElec.Add(elec2);
+            listaElec.Add(elec3);
+            listaElec.Add(tel1);
+            listaElec.Add(tel2);
+            listaElec.Add(tel3);
+
+
+            foreach (Electrodomestico elec in listaElec)
+            {
+
+            }
         }
     }
 }

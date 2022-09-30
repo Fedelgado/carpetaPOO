@@ -50,7 +50,12 @@
       "ProjectGuid": "f7b36872-1b08-4592-bffc-70b8fdf2ed35",
       "DisplayName": "ej01.17_09",
       "ColorIndex": 9
+    },
+    "e8e077c8-3120-41a1-b5ed-b9dd12ec06cd": {
+      "ProjectGuid": "e8e077c8-3120-41a1-b5ed-b9dd12ec06cd",
+      "DisplayName": "Ej04_fis",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }
