@@ -88,7 +88,7 @@ namespace Ej04_fis
         {
         }
 
-        public Lavadora(float precio, float peso) : base(peso,  precio)
+        public Lavadora(float precio, float peso) : base(precio,  peso)
         { }
 
         public Lavadora(float precio, string color, char consumo, float peso, int carga) : base(precio, color, consumo, peso)
@@ -99,6 +99,14 @@ namespace Ej04_fis
         public override float precioFinal()
         {
             float precioFinal = PrecioBase;
+
+            precioFinal += 100 - ((int)this.ConsumoEnergetico - 65) * 20;
+
+            if (Peso >= 0 && Peso < 20) precioFinal += 10;
+            else if (Peso >= 20 && Peso < 50) precioFinal += 50;
+            else if (Peso >= 50 && Peso < 80) precioFinal += 80;
+            else precioFinal += 100;
+
             if (Carga > 30)
             {
                 precioFinal += 50;
@@ -121,7 +129,7 @@ namespace Ej04_fis
         {
         }
 
-        public Television(float precio, float peso) : base(peso, precio)
+        public Television(float precio, float peso) : base(precio, peso)
         {
         }
 
@@ -176,8 +184,9 @@ namespace Ej04_fis
 
             foreach (Electrodomestico elec in listaElec)
             {
-
+                Console.WriteLine(elec.precioFinal());
             }
+            Console.ReadKey();
         }
     }
 }
