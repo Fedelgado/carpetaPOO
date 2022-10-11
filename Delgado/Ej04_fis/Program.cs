@@ -105,7 +105,7 @@ namespace Ej04_fis
             if (Peso >= 0 && Peso < 20) precioFinal += 10;
             else if (Peso >= 20 && Peso < 50) precioFinal += 50;
             else if (Peso >= 50 && Peso < 80) precioFinal += 80;
-            else precioFinal += 100;
+            else precioFinal += 100;    
 
             if (Carga > 30)
             {
@@ -142,12 +142,19 @@ namespace Ej04_fis
         public override float precioFinal()
         {
             float precioFinal = PrecioBase;
+
+            precioFinal += 100 - ((int)this.ConsumoEnergetico - 65) * 20;
+
+            if (Peso >= 0 && Peso < 20) precioFinal += 10;
+            else if (Peso >= 20 && Peso < 50) precioFinal += 50;
+            else if (Peso >= 50 && Peso < 80) precioFinal += 80;
+            else precioFinal += 100;
+
             if (Resolucion > 40)
                 precioFinal += (30*PrecioBase)/100;
 
             if (SintonizadorTDT == true)
                 precioFinal += 50;
-
 
             return precioFinal;
         }
@@ -158,6 +165,9 @@ namespace Ej04_fis
     {
         static void Main(string[] args)
         {
+            float sumaElec = 0;
+            float sumaLav = 0;
+            float sumaTel = 0;
             List<Electrodomestico> listaElec = new List<Electrodomestico>(); 
             Lavadora lav1 = new Lavadora(30, 40);
             Lavadora lav2 = new Lavadora(60, 96);
@@ -174,6 +184,7 @@ namespace Ej04_fis
             listaElec.Add(lav1);
             listaElec.Add(lav2);
             listaElec.Add(lav3);
+            listaElec.Add(lav4);
             listaElec.Add(elec1);
             listaElec.Add(elec2);
             listaElec.Add(elec3);
@@ -182,10 +193,23 @@ namespace Ej04_fis
             listaElec.Add(tel3);
 
 
+
             foreach (Electrodomestico elec in listaElec)
             {
-                Console.WriteLine(elec.precioFinal());
+                float precioFinal = elec.precioFinal();
+                Console.WriteLine(precioFinal);
+
+                if(elec is Lavadora)
+                    sumaLav += precioFinal;
+                else if(elec is Television)
+                    sumaTel += precioFinal;
+
+                if (elec is Electrodomestico)
+                    sumaElec += precioFinal;
             }
+            Console.WriteLine($"El precio final de electrodomesticos es de {sumaElec}");
+            Console.WriteLine($"El precio final de televisiones es de {sumaTel}");
+            Console.WriteLine($"El precio final de lavadoras es de {sumaLav}");
             Console.ReadKey();
         }
     }
