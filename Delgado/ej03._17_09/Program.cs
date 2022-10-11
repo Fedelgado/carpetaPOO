@@ -6,12 +6,10 @@ using System.Threading;
 
 namespace ej03._17_09
 {
-
-
     public class Password
     {
-        public static Random ran = new Random();
-        int longitud = 8;
+        static Random ran = new Random();
+        int longitud = 8;   
         string contraseña;
 
 
@@ -47,19 +45,14 @@ namespace ej03._17_09
             for (int i = 0; i < longitud; i++)
             {
                 if (Char.IsUpper(contraseña[i]))
-                {
                     mayusc++;
-                }
-
+                
                 if (Char.IsNumber(contraseña[i]))
-                {
                     num++;
-                }
-
+                
                 if (Char.IsLower(contraseña[i]))
-                {
                     minusc++;
-                }
+
             }
 
             if (mayusc > 2 && minusc > 1 && num > 5)
@@ -111,19 +104,13 @@ namespace ej03._17_09
                 for (int j = 0; j < contraseñas.Count; j++)
                 {
                     if (Char.IsUpper(contra.Contraseña[j]))
-                    {
                         mayusc++;
-                    }
 
                     if (Char.IsNumber(contra.Contraseña[j]))
-                    {
                         num++;
-                    }
 
                     if (Char.IsLower(contra.Contraseña[j]))
-                    {
                         minusc++;
-                    }
                 }
 
                 if (esFuerteOno[i] == true)
