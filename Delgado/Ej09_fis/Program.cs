@@ -1,11 +1,10 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ej09_fis
-{
     public class Cine
     {
         string pelicula;
@@ -20,9 +19,14 @@ namespace Ej09_fis
 
     public class Asientos
     {
-        int fila;
-        char col;
-        bool estaOcup;
+        int[] fila = {8,7,6,5,4,3,2,1};
+        char[] letra = {'A','B','C','D','E','F','G','H','I'};
+        
+        public Asientos()
+        {
+            
+        }
+        
         
 
     }
@@ -45,6 +49,9 @@ namespace Ej09_fis
         string nombre;
         int edad;
         int dinDisp;
+        string asiento;
+        bool puedeSent = false;
+        
         public Espectador()
         {
 
