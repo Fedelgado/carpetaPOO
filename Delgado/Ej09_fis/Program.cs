@@ -118,6 +118,15 @@ namespace Ej09_fis
 				AsientoOcup.Add(AsientoRan);
 				espectador.Asiento = AsientoRan;
 				espectador.Sentarse();
+                if (!espectador.PuedeSent)
+                {
+                    AsientoOcup.Remove(espectador.Asiento);
+                }
+                else
+                {
+                    Console.WriteLine($"{espectador.Nombre} esta sentado en el asiento {espectador.Asiento}");
+                }
+                
 			}
             Console.ReadKey();
         }
