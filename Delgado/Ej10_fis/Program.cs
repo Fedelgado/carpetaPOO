@@ -10,6 +10,10 @@ namespace Ej10_fis
     {
         static void Main(string[] args)
         {
+            Baraja baraja = new Baraja();
+            baraja.barajar();
+            Console.WriteLine(baraja.SiguienteCarta().Numero);
+            Console.ReadKey();  
         }
     }
 }

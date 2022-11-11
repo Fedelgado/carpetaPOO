@@ -12,6 +12,9 @@ namespace Ej10_fis
         string palo;
         bool entregada = false;
 
+        public sbyte Numero { get { return num; } }
+        public bool Entregada { get { return entregada; } set { entregada = value; } }
+
         public Carta()
         {
         }
