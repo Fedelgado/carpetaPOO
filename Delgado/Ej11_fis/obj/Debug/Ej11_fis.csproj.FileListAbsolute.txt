@@ -1,0 +1,8 @@
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\bin\Debug\Ej11_fis.exe.config
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\bin\Debug\Ej11_fis.exe
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\bin\Debug\Ej11_fis.pdb
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\obj\Debug\Ej11_fis.csproj.AssemblyReference.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\obj\Debug\Ej11_fis.csproj.SuggestedBindingRedirects.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\obj\Debug\Ej11_fis.csproj.CoreCompileInputs.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\obj\Debug\Ej11_fis.exe
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej11_fis\obj\Debug\Ej11_fis.pdb

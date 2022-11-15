@@ -6,3 +6,11 @@ C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.csproj.Su
 C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.exe
 C:\Users\Alumno\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.pdb
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\bin\Debug\Ej10_fis.exe.config
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\bin\Debug\Ej10_fis.exe
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\bin\Debug\Ej10_fis.pdb
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.csproj.AssemblyReference.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.csproj.SuggestedBindingRedirects.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.csproj.CoreCompileInputs.cache
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.exe
+C:\Users\A\Desktop\carpetaPOO\Delgado\Ej10_fis\obj\Debug\Ej10_fis.pdb
